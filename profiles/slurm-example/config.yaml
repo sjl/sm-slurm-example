@@ -1,0 +1,16 @@
+default-resources:
+  - slurm_account=REDACTED
+  - slurm_partition=debug
+  - runtime=5
+  - mem_mb=1024
+jobs: 10
+resources:
+  - mem_mb=102400
+restart-times: 0
+max-jobs-per-second: 10
+max-status-checks-per-second: 1
+latency-wait: 30
+keep-going: False
+rerun-incomplete: True
+printshellcmds: True
+scheduler: greedy
